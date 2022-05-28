@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import Pizza from '../components/Pizza'
-import { CartState } from '../context/Context'
+import Card from '../components/Card'
 import * as ReactBootStrap from 'react-bootstrap'
 
-const BASE_URL = 'https://run.mocky.io/v3/ec196a02-aaf4-4c91-8f54-21e72f241b68'
+const BASE_URL = 'https://jsonplaceholder.typicode.com/posts'
 
 export default function Homescreen() {
     const [names, setNames] = useState([])
@@ -23,7 +22,7 @@ export default function Homescreen() {
                 {loading ? names.map(name => {
                     return (<div className="col-md-4">
                         <div>
-                            <Pizza pizza={name} />
+                            <Card card={name} />
                         </div>
                     </div>)
                 }) : <div class="text-center">
