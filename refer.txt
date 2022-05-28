@@ -1,0 +1,4 @@
+1. run on local machine
+2. npm start to start the project
+3. In the form section after submitting you can see the changes in console that a new container is created with uinque id (ex: id: 101).
+IN the api it is finished at 100. SO it is creating a fake data which you can see in console.
